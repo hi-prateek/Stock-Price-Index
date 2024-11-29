@@ -5,7 +5,7 @@ import logging, os
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-dir_path = 'C:/Users/prateek.pandey.ext/OneDrive - Everest Group/Documents/Desktop/Stock Price Index'
+dir_path = ''
 
 try:
     stocks_info = pd.read_excel(os.path.join(dir_path, 'stocks_list.xlsx')).to_dict('records')
